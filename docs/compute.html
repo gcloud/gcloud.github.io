@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge" http-equiv="X-UA-Compatible" /><title>GCloud, Go Packages for Cloud Services</title><meta content="" name="description" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--[if lt IE 9]><![endif]--><link href="/css/main.css" media="all" rel="stylesheet" type="text/css" /></head><body><div class="container-narrow"><div class="masthead"><ul class="nav nav-pills pull-right"><li><a href="/">Home</a></li><li class="active"><a href="/docs">Docs</a></li><li><a href="https://www.bountysource.com/fundraisers/411-gcloud">Funding</a></li><li><a href="https://github.com/gcloud">Source</a></li></ul><h3 class="muted"><img src="/img/gcloud.png" width="42" /></h3></div><hr /><div class="row-fluid"><h1>compute</h1>
+
+<h2></h2>
+
+<pre><code>import &quot;github.com/gcloud/compute&quot;
+</code></pre>
+
+<p>GCloud compute package for cloud services.</p>
+
+<h2>Usage</h2>
+
+<h4>type Images</h4>
+
+<pre><code class="go">type Images struct {
+    identity.Account
+}
+</code></pre>
+
+<p>The images available from the compute service.</p>
+
+<h4>func (*Images) Create</h4>
+
+<pre><code class="go">func (s *Images) Create()
+</code></pre>
+
+<p>Create an image.</p>
+
+<h4>func (*Images) Destroy</h4>
+
+<pre><code class="go">func (s *Images) Destroy()
+</code></pre>
+
+<p>Destroy an image.</p>
+
+<h4>func (*Images) Distribute</h4>
+
+<pre><code class="go">func (s *Images) Distribute()
+</code></pre>
+
+<p>Distribute images to mutliple regions.</p>
+
+<h4>func (*Images) List</h4>
+
+<pre><code class="go">func (s *Images) List()
+</code></pre>
+
+<p>List images available to the account.</p>
+
+<h4>func (*Images) Show</h4>
+
+<pre><code class="go">func (s *Images) Show(id string)
+</code></pre>
+
+<p>Show image information for a given id.</p>
+
+<h4>type Locations</h4>
+
+<pre><code class="go">type Locations struct{}
+</code></pre>
+
+<p>The locations provided by a compute service.</p>
+
+<h4>func (*Locations) List</h4>
+
+<pre><code class="go">func (s *Locations) List()
+</code></pre>
+
+<p>List available locations.</p>
+
+<h4>func (*Locations) Show</h4>
+
+<pre><code class="go">func (s *Locations) Show(id string)
+</code></pre>
+
+<p>Show location information for a given id.</p>
+
+<h4>type Servers</h4>
+
+<pre><code class="go">type Servers struct {
+    identity.Account
+}
+</code></pre>
+
+<p>The Servers type interacts with Compute services.</p>
+
+<h4>func (*Servers) Create</h4>
+
+<pre><code class="go">func (s *Servers) Create()
+</code></pre>
+
+<p>Create a server.</p>
+
+<h4>func (*Servers) Destroy</h4>
+
+<pre><code class="go">func (s *Servers) Destroy()
+</code></pre>
+
+<p>Destroy a server.</p>
+
+<h4>func (*Servers) List</h4>
+
+<pre><code class="go">func (s *Servers) List()
+</code></pre>
+
+<p>List servers available on the account.</p>
+
+<h4>func (*Servers) Reboot</h4>
+
+<pre><code class="go">func (s *Servers) Reboot()
+</code></pre>
+
+<p>Reboot a server.</p>
+
+<h4>func (*Servers) Show</h4>
+
+<pre><code class="go">func (s *Servers) Show(id string)
+</code></pre>
+
+<p>Show server information for a given id.</p>
+
+<h4>func (*Servers) Start</h4>
+
+<pre><code class="go">func (s *Servers) Start()
+</code></pre>
+
+<p>Start a server that is stopped.</p>
+
+<h4>func (*Servers) Stop</h4>
+
+<pre><code class="go">func (s *Servers) Stop()
+</code></pre>
+
+<p>Stop a server that is running.</p>
+
+<h4>type Sizes</h4>
+
+<pre><code class="go">type Sizes struct{}
+</code></pre>
+
+<p>The sizes offered by the compute service.</p>
+
+<h4>func (*Sizes) List</h4>
+
+<pre><code class="go">func (s *Sizes) List()
+</code></pre>
+
+<p>List available sizes.</p>
+
+<h4>func (*Sizes) Show</h4>
+
+<pre><code class="go">func (s *Sizes) Show(id string)
+</code></pre>
+
+<p>Show size information for a given id.</p>
+</div><hr /><footer><p class="pull-right">&copy; 2013</p></footer></div><!--JavaScripts--></body></html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge" http-equiv="X-UA-Compatible" /><title>GCloud, Go Packages for Cloud Services</title><meta content="" name="description" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--[if lt IE 9]><![endif]--><link href="/css/main.css" media="all" rel="stylesheet" type="text/css" /></head><body><div class="container-narrow"><div class="masthead"><ul class="nav nav-pills pull-right"><li><a href="/">Home</a></li><li class="active"><a href="/docs">Docs</a></li><li><a href="https://www.bountysource.com/fundraisers/411-gcloud">Funding</a></li><li><a href="https://github.com/gcloud">Source</a></li></ul><h3 class="muted"><img src="/img/gcloud.png" width="42" /></h3></div><hr /><div class="row-fluid"><h1>storage</h1>
+
+<h2></h2>
+
+<pre><code>import &quot;github.com/gcloud/storage&quot;
+</code></pre>
+
+<p>This package provides object storage services for GCloud, the cloud abstraction
+layer in GO.</p>
+
+<h2>Usage</h2>
+
+<h4>type Containers</h4>
+
+<pre><code class="go">type Containers struct {
+    identity.Account
+}
+</code></pre>
+
+<p>The containers available from the storage service.</p>
+
+<h4>func (*Containers) Create</h4>
+
+<pre><code class="go">func (s *Containers) Create()
+</code></pre>
+
+<p>Create a container.</p>
+
+<h4>func (*Containers) Destroy</h4>
+
+<pre><code class="go">func (s *Containers) Destroy()
+</code></pre>
+
+<p>Destroy a container.</p>
+
+<h4>func (*Containers) Distribute</h4>
+
+<pre><code class="go">func (s *Containers) Distribute()
+</code></pre>
+
+<p>Distribute containers to mutliple regions.</p>
+
+<h4>func (*Containers) List</h4>
+
+<pre><code class="go">func (s *Containers) List()
+</code></pre>
+
+<p>List containers available to the account.</p>
+
+<h4>func (*Containers) Show</h4>
+
+<pre><code class="go">func (s *Containers) Show(id string)
+</code></pre>
+
+<p>Show container information for a given id.</p>
+
+<h4>type Objects</h4>
+
+<pre><code class="go">type Objects struct {
+    identity.Account
+    Containers
+}
+</code></pre>
+
+<p>The objects available from the storage service.</p>
+
+<h4>func (*Objects) Create</h4>
+
+<pre><code class="go">func (s *Objects) Create()
+</code></pre>
+
+<p>Create an object.</p>
+
+<h4>func (*Objects) Destroy</h4>
+
+<pre><code class="go">func (s *Objects) Destroy()
+</code></pre>
+
+<p>Destroy an object.</p>
+
+<h4>func (*Objects) List</h4>
+
+<pre><code class="go">func (s *Objects) List()
+</code></pre>
+
+<p>List objects available to the account.</p>
+
+<h4>func (*Objects) Show</h4>
+
+<pre><code class="go">func (s *Objects) Show(id string)
+</code></pre>
+
+<p>Show object information for a given id.</p>
+</div><hr /><footer><p class="pull-right">&copy; 2013</p></footer></div><!--JavaScripts--></body></html>
