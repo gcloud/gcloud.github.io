@@ -1,0 +1,29 @@
+// I gather this file is a starting point for the project.
+@import "compass";
+
+// Twitter Bootstrap
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-weight: 200;
+}
+
+h1,h2,h3,h4 { font-weight: 200; }
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 20px 0;
+}
+
+.jumbotron {
+	margin: 60px 0;
+	text-align: center;
+}

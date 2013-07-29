@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    / Use title if it's in the page YAML frontmatter
+    title= current_page.data.title || "GCloud, Go Packages for Cloud Services"
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      /script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+
+    = stylesheet_link_tag "main", media: "all"
+
+  body
+    .container-narrow
+      .masthead
+        ul.nav.nav-pills.pull-right
+          - nav_link "index", "Home", "/"
+          - nav_link "docs", "Docs", "/docs"
+          li= link_to "Funding", "https://www.bountysource.com/fundraisers/411-gcloud"
+          li= link_to "Source", "https://github.com/gcloud"
+        h3.muted
+          img src="/img/gcloud.png" width="42"
+      hr
+
+      - if page_classes == 'index'
+        .jumbotron
+          h1= current_page.data.title
+        hr
+
+      .row-fluid
+        = yield
+
+      hr
+      footer
+        p.pull-right &copy; 2013
+
+    /! JavaScripts
+    / Placed at the end of the document so the pages load faster
+    / script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    /= javascript_include_tag "main"
