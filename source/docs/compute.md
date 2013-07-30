@@ -16,12 +16,19 @@ type Images struct {
 
 The images available from the compute service.
 
+#### func (*Images) Create
+
+```go
+func (s *Images) Create()
+```
+Create an image.
+
 #### func (*Images) Destroy
 
 ```go
 func (s *Images) Destroy()
 ```
-Destroy a image.
+Destroy an image.
 
 #### func (*Images) Distribute
 

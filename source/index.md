@@ -1,6 +1,15 @@
 ---
 title: Go Packages for Cloud Services
 ---
+GCloud delivers a set of open source packages and interfaces to easily manage services
+across cloud providers. These packages and interfaces are written in [Go](golang.org) to
+deliver a simple user experience with maximum flexibility and a high level of concurrency. The
+result will be an easily imported library, a portable binary, http, zeromq, and basic socket interfaces.
+
+Currently in the design phase, GCloud is creating the base api and test cases needed to write
+the complete set of packages.
+
+Read the [FAQ](faq.html)
 
 Packages
 ----
@@ -9,10 +18,10 @@ Packages
 - [Storage](docs/storage.html)
 
 
-Goals
------
+Features
+--------
  - Standard API to cloud providers
- - Library that can be included in other Go programs
+ - Packages that can be included in other Go programs
  - Multiple interfaces (http, zmq, tcp) for programs written in other languages
  - Command line interface for utility
 
@@ -25,11 +34,6 @@ Advantages
  - speed
 
 
-Approach
---------
-Similiar to libcloud, pkgcloud, fog, the aim is to create a set of packages in Go. The advantage will be an easily imported library or a portable binary for interaction from other programs. Few dependencies will be needed to launch a complete cloud management platform.
-
-
 Services
 --------
 - Compute
@@ -37,3 +41,10 @@ Services
 - Object Storage
 - DNS (future)
 - Load Balancers (future)
+
+
+Similar Libraries
+-----------------
+ - [libcloud](http://libcloud.apache.org/) (python)
+ - [nodejs](https://github.com/nodejitsu/pkgcloud) (nodejs)
+
